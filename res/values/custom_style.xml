@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sets the text styles -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+     <style name="CustomWindowTitleText" parent="android:TextAppearance.WindowTitle">
+          <item name="android:textSize">16dip</item>
+          <item name="android:textColor">@color/white</item>
+          <item name="android:textStyle">bold|italic</item>
+     </style>
+     <!-- Changes the background color of the title bar -->
+     <style name="CustomWindowTitleBackground">
+           <item name="android:background">@drawable/corner_round</item>
+     </style>
+    
+     <!-- Set the theme for the window title -->
+     <!-- NOTE: setting android:textAppearence to style defined above -->
+     <style name="CustomWindowTitle">
+           <item name="android:drawableLeft">@drawable/az_icon_small</item>
+           <item name="android:drawablePadding">10dp</item>
+          
+          <item name="android:textAppearance">@style/CustomWindowTitleText</item>
+          <item name="android:textColor">@color/white</item>
+          <item name="android:shadowDx">0</item>
+          <item name="android:paddingLeft">10dp</item>
+          <item name="android:shadowDy">0</item>
+      </style>
+
+      <style name="CustomTheme" parent="android:Theme">
+          	<item name="android:cacheColorHint">@color/blue</item>
+           <item name="android:windowTitleSize">35dip</item>
+           <item name="android:windowTitleStyle">@style/CustomWindowTitle</item>
+           <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackground</item>
+           <item name="android:background">@drawable/white_corner_round</item>
+           <item name="android:textColor">@color/black</item>
+      </style>
+</resources>

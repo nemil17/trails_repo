@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.javacodegeeks.android.googlemaps"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <supports-screens
+        android:largeScreens="false"
+        android:resizeable="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/az_icon"
+        android:label="@string/aztrails"
+         >
+        <activity
+            android:name=".GMapsActivity"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GMapActivity"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+                <activity
+            android:name=".FAQ"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+                        <activity
+            android:name=".Info"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+                
+        <activity
+            android:name=".Safety"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Difficulty"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrailWithRegions"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Weather"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OfflineAllTrailDetails"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Header"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShowAll"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrailsByRegion"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditPostCard"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OfflineDetailsTab"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapDirection"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SlideShow"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchResults"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TakePic"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Warnings"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListViewActivity"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailsTab"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrackTrail"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoadTrails"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TabPage"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+
+                <category android:name="android.intent.category.TAB" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MergePictures"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test2"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MiscDetails"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Test"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".List1"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapDetails"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrailDetails"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchPage"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" >
+                </action>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TrailWeatherDetails"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapPage"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ListTest"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".AllTrailDetails"
+            android:label="@string/aztrails"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DigitSpinner"
+            android:label="@string/title_activity_numberpicker_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.CALL" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

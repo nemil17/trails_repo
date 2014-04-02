@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/ScrlView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter the keyword:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:typeface="sans" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ESTIMATED DURATION"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <RadioGroup
+                android:id="@+id/timeGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="4" >
+
+                <ToggleButton
+                    android:id="@+id/tall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="All"
+                    android:textOn="All"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/t02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="0-2 hours"
+                    android:textOn="0-2 hours"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/t24"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="2-4 hours"
+                    android:textOn="2-4 hours"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/t5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="5+ hours"
+                    android:textOn="5+ hours"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surafece Terrain"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            
+             <RadioGroup
+                android:id="@+id/surfaceGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <ToggleButton
+                    android:id="@+id/all"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="Any"
+                    android:textOn="Any"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/natural"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="Natural"
+                    android:textOn="Natural"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/pavement"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="Pavement"
+                    android:textOn="Pavement"
+                    android:textSize="14sp" />
+            </RadioGroup>
+            
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SORT BY"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <RadioGroup
+                android:id="@+id/difficultyGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+                android:weightSum="3" >
+
+                <ToggleButton
+                    android:id="@+id/easy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="Nearest"
+                    android:textOn="Nearest"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/medium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="Difficulty"
+                    android:textOn="Difficulty"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/difficult"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bgtoggle"
+                    android:textOff="Alphabetical"
+                    android:textOn="Alphabetical"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/restroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restroom at trailhead"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/parking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking available"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drinking water"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/Free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Entrance Fee"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/campground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camping"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/handicap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handicap Accessible"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/horsestage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Horse Staging Facilities"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/skiing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skiing permitted"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/pets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leashed pets permitted"
+                android:textColor="@color/black" />
+
+            <CheckBox
+                android:id="@+id/paddle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small paddle craft permitted"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/corner_round"
+                android:text="Select a region" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Search" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

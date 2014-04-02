@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:id="@+id/search" android:title=" " android:icon="@drawable/search_copy" android:showAsAction="always"/>
+	<item android:id="@+id/mytrails" android:title="My Trails"/>
+	<item android:id="@+id/explore" android:title="Map"/>
+	<item android:id="@+id/trailsnearme" android:title="Explore"/>
+	<item android:id="@+id/about" android:title="Info"/>
+</menu>
+

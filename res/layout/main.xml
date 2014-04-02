@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layercontainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fastScrollEnabled="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/listView1"
+        android:text="Show more" />
+
+    <Button
+        android:id="@+id/bregion"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/show"
+        android:background="@drawable/corner_round"
+        android:text="BROWSE REGION" />
+
+    <Button
+        android:id="@+id/bmap"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bregion"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/corner_round"
+        android:text="BROWSE MAP" />
+
+</RelativeLayout>

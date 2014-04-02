@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3" >
+
+    <TextView
+        android:id="@+id/distancehiked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dull_orange"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/downloadedtrail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dull_orange"
+        android:gravity="center"
+        android:text="Downloaded Trail"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:typeface="sans" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/completedtrails"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dull_orange"
+        android:gravity="center"
+        android:text="Completed Trails"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:typeface="sans" >
+    </ListView>
+
+</LinearLayout>

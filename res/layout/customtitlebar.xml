@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal" android:layout_width="fill_parent"
+android:layout_height="fill_parent" android:background="@color/green">
+<ImageView android:layout_width="25px" android:layout_height="25px"
+    android:src="@drawable/az_icon"></ImageView>
+<TextView android:id="@+id/customtitlebar"
+    android:layout_width="wrap_content" android:layout_height="fill_parent"
+    android:text="Az Trails" android:textColor="@color/black"
+    android:background="@color/green" android:padding="-3dp"/>
+</LinearLayout>

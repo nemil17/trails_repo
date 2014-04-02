@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layercontainer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TableLayout
+        android:id="@+id/tabla_cuerpo"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_corner_round"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Hiking mph"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_corner_round"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Difficulty Rating"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dullorange_corner_round"
+                android:padding="5dp"
+                android:text="4 mph"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dullorange_corner_round"
+                android:padding="5dp"
+                android:text="Easy"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dullorange_corner_round"
+                android:padding="5dp"
+                android:text="3 mph"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dullorange_corner_round"
+                android:padding="5dp"
+                android:text="Medium"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dullorange_corner_round"
+                android:padding="5dp"
+                android:text="Less than 3 mph"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dullorange_corner_round"
+                android:padding="5dp"
+                android:text="Difficult"
+                android:textAppearance="?android:attr/textAppearanceMedium" >
+            </TextView>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
